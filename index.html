@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedevs</title>
 
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <main>
         <div class="pokedevs">
             <div class="pokedev-cards">
-                <div class="pokedev-card electic-type" id="devchu-card">
+                <div class="pokedev-card electric-type opened" id="devchu-card">
                     <div class="card-top">
                         <div class="details">
                             <h2 class="name">Devchu</h2>
@@ -23,8 +32,12 @@
                         </div>
                     </div>
                     <div class="card-info">
-                        <h3>Description</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laborum vero, aliquam eligendi dolor quasi nemo quis natus. Nesciunt perspiciatis velit consequuntur accusamus unde earum reprehenderit fugiat sed, sunt deserunt.</p>
+                        <div class="description">
+                            <h3>Description</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid laborum vero, aliquam
+                                eligendi dolor quasi nemo quis natus. Nesciunt perspiciatis velit consequuntur accusamus
+                                unde earum reprehenderit fugiat sed, sunt deserunt.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -41,7 +54,9 @@
                     </div>
                     <div class="card-info">
                         <h3>Description</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quas commodi ullam aut consectetur velit ratione deleniti, voluptates fuga. Architecto est id ex earum rem eum eligendi tenetur iure iusto.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quas commodi ullam aut
+                            consectetur velit ratione deleniti, voluptates fuga. Architecto est id ex earum rem eum
+                            eligendi tenetur iure iusto.</p>
                     </div>
                 </div>
 
@@ -58,7 +73,9 @@
                     </div>
                     <div class="card-info">
                         <h3>Description</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ex dolor quo ullam beatae saepe, libero voluptates quae. Nemo voluptas sed veniam alias provident necessitatibus blanditiis ullam eaque itaque facilis.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ex dolor quo ullam beatae
+                            saepe, libero voluptates quae. Nemo voluptas sed veniam alias provident necessitatibus
+                            blanditiis ullam eaque itaque facilis.</p>
                     </div>
                 </div>
 
@@ -75,11 +92,13 @@
                     </div>
                     <div class="card-info">
                         <h3>Description</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi possimus ipsa totam nisi mollitia quaerat! Beatae labore veritatis, harum earum saepe, totam voluptas quos necessitatibus, recusandae eaque id pariatur ullam!</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi possimus ipsa totam nisi
+                            mollitia quaerat! Beatae labore veritatis, harum earum saepe, totam voluptas quos
+                            necessitatibus, recusandae eaque id pariatur ullam!</p>
                     </div>
                 </div>
 
-                <div class="pokedev-card" id="scriptle-card">
+                <div class="pokedev-card water-type" id="scriptle-card">
                     <div class="card-top">
                         <div class="details">
                             <h2 class="name">Scriptle</h2>
@@ -92,7 +111,9 @@
                     </div>
                     <div class="card-info">
                         <h3>Description</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, numquam, libero iure debitis, ex enim ratione deserunt beatae voluptas porro suscipit quaerat ullam optio aliquid. Esse molestias est blanditiis necessitatibus?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, numquam, libero iure debitis,
+                            ex enim ratione deserunt beatae voluptas porro suscipit quaerat ullam optio aliquid. Esse
+                            molestias est blanditiis necessitatibus?</p>
                     </div>
                 </div>
 
@@ -109,16 +130,44 @@
                     </div>
                     <div class="card-info">
                         <h3>Description</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis provident aliquam voluptates deleniti, possimus, dolorem tempora commodi aut dolor totam, impedit officiis nemo. Commodi nostrum temporibus aliquam doloribus ea ex.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis provident aliquam
+                            voluptates deleniti, possimus, dolorem tempora commodi aut dolor totam, impedit officiis
+                            nemo. Commodi nostrum temporibus aliquam doloribus ea ex.</p>
                     </div>
                 </div>
             </div>
             <nav class="listing">
-
+                <ul>
+                    <li class="pokedev active" id="devchu">
+                        <img src="./src/images/devchu.png" alt="devchu">
+                        <span>Devchu</span>
+                    </li>
+                    <li class="pokedev" id="codevee">
+                        <img src="./src/images/codevee.png" alt="codevee">
+                        <span>Codevee</span>
+                    </li>
+                    <li class="pokedev" id="psycoder">
+                        <img src="./src/images/psycoder.png" alt="psycoder">
+                        <span>Psycoder</span>
+                    </li>
+                    <li class="pokedev" id="charmandev">
+                        <img src="./src/images/charmandev.png" alt="charmandev">
+                        <span>Charmandev</span>
+                    </li>
+                    <li class="pokedev" id="scriptle">
+                        <img src="./src/images/scriptle.png" alt="scriptle">
+                        <span>Scriptle</span>
+                    </li>
+                    <li class="pokedev" id="devlypuff">
+                        <img src="./src/images/devlypuff.png" alt="devlypuff">
+                        <span>Devlypuff</span>
+                    </li>
+                </ul>
             </nav>
         </div>
     </main>
     <footer></footer>
     <script src="./src/script.js"></script>
 </body>
+
 </html>
