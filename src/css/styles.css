@@ -1,0 +1,156 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url("../images/background.png");
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    backdrop-filter: blur(3px);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pokedevs {
+    display: flex;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.pokedev-card {
+    display: none;
+    max-width: 360px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.pokedev-card.opened {
+    display: block;
+}
+
+.pokedev-card img {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.pokedev-card .card-top {
+    padding: 30px 40px 0;
+}
+
+.pokedev-card .name {
+    margin-bottom: 5px;
+}
+
+.pokedev-card .type {
+    background-color: #fff;
+    font-size: 12px;
+    opacity: 0.7;
+    border-radius: 10px;
+    padding: 2px 10px;
+}
+
+.pokedev-card .details {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokedev-card .card-info {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 30px 50px;
+    margin-top: -70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.pokedev-card .card-info h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #6b727a;
+}
+
+.pokedev-card .card-info .description {
+    padding: 0 10px;
+    font-size: 15px;
+    
+    /* max-height: 150px;
+    /* overflow-y: scroll; 
+    /* commented because it's to be devided about the style. Maybe I rather to auto expand the description card to fit its full text. */
+}
+
+.electric-type {
+    background-color: #fcc719;
+    /* border-top-left-radius: 8px;
+    border-top-right-radius: 8px; */
+}
+
+.fire-type {
+    background-color: #f15000;
+}
+
+.water-tpe {
+    background-color: #015c98;
+}
+
+.grass-type {
+    background-color: #49d0b0;
+}
+
+.dark-type {
+    background-color: #ba68c8;
+}
+
+.fairy-type {
+    background-color: #c29791;
+}
+
+.listing {
+    max-width: 200px;
+}
+
+.listing .pokedev img {
+    width: 25%;
+}
+
+.listing .pokedev {
+    background-color: #6b727a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    min-height: 70px;
+    transition: 0.15 ease-in-out;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.listing .pokedev:hover {
+    transform: scale(1.05);
+}
+
+.listing .pokedev span {
+    padding-right: 20px;
+}
+
+.listing .pokedev.active {
+    background-color: #1ba39c;
+}
