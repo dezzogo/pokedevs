@@ -8,4 +8,31 @@
     .pokedev-card {
         max-width: 300px;
     }
+
+    .pokedev-card .card-info {
+        padding: 60px 30px 30px;
+        margin-top: -50px;
+    }
+
+    .pokedev-card .card-info h3 {
+        font-size: 16px;
+    }
+
+    .listing {
+        max-width: 360px;
+    }
+
+    .listing .pokedev {
+        border-radius: 20px;
+        justify-content: space-evenly;
+        width: 45%;
+        margin-top: 0;
+    }
+
+    .listing ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+    }
 }
